@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Popular Movies</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_movie_detail">Movie Detail</string>
+
+    <!-- Movie Category Preference -->
+    <string name="pref_movie_category_label">Sort By Movie Category</string>
+    <string name="pref_movie_category_key" translatable="false">movie_category</string>
+    <string name="pref_movie_category_default" translatable="false">popular</string>
+    <string name="pref_movie_category_popular" translatable="false">popular</string>
+    <string name="pref_movie_category_top_rated" translatable="false">top rated</string>
+
+    <!-- Settings Activity -->
+    <string name="title_activity_settings">Settings</string>
+
+</resources>
