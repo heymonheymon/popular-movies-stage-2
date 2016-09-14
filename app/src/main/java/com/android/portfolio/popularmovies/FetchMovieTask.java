@@ -71,9 +71,6 @@ public class FetchMovieTask extends AsyncTask<Void, Void, Movie[]> {
         String movieJsonStr = null;
 
         try {
-
-
-
             URL url = new URL(fetchMovieCallback.buildUri());
 
             // Create the request to the movie db, and open the connection
@@ -136,6 +133,10 @@ public class FetchMovieTask extends AsyncTask<Void, Void, Movie[]> {
 
     @Override
     protected void onPostExecute(Movie[] movies) {
-        fetchMovieCallback.onFetchMovieTaskComplete(movies);
+        if(null != movies) {
+            fetchMovieCallback.onFetchMovieTaskComplete(movies);
+        } else {
+            fetchMovieCallback.displayToast();
+        }
     }
 }

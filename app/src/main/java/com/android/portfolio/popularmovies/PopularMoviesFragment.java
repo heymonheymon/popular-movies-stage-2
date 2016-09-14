@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -132,5 +133,12 @@ public class PopularMoviesFragment extends Fragment implements IFetchMovieCallba
             return null;
         }
         return builtUri.toString();
+    }
+
+    @Override
+    public void displayToast() {
+        Toast.makeText(getActivity(),
+                "Something went wrong, please check your internet connection and try again!",
+                Toast.LENGTH_SHORT).show();
     }
 }
