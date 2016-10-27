@@ -54,8 +54,6 @@ public class DetailActivity extends ActionBarActivity {
      */
     public static class DetailFragment extends Fragment {
         private static String LOG_TAG = DetailFragment.class.getSimpleName();
-
-        private String mforecastStr;
         private Movie mMovieObj;
 
         public DetailFragment() {

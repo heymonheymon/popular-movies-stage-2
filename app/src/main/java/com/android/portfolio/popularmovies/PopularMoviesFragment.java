@@ -23,7 +23,6 @@ public class PopularMoviesFragment extends Fragment implements IFetchMovieCallba
     private final String LOG_TAG = PopularMoviesFragment.class.getSimpleName();
 
     private MovieAdaptor mMovieAdapter;
-
     private ArrayList<Movie> movieList;
 
     public PopularMoviesFragment() {
